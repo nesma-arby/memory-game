@@ -6,6 +6,7 @@
   - [Table of Contents](#table-of-contents)
   - [Guidlines](#guidlines)
   - [How the game works](#how-the-game-works)
+  - [Dependencies](#dependencies)
 
 
 ## Guidlines
@@ -28,7 +29,7 @@
 - If the cards do not match, both cards are flipped face down.
 - The game ends once all cards have been correctly matched.
 
-##Dependencies
+## Dependencies
 - Animate.css
 - Font awesome
 
