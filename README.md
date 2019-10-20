@@ -2,19 +2,33 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+- [Memory Game Project](#memory-game-project)
+  - [Table of Contents](#table-of-contents)
+  - [Guidlines](#guidlines)
+  - [How the game works](#how-the-game-works)
 
-## Instructions
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Guidlines
 
-To get started, open `js/app.js` and start building out the app's functionality
+  Game displays the current number of moves a user has made.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+  The game displays a star rating (from 1 to at least 3) that reflects the player's performance. At the beginning of a game, it should display at least 3 stars. After some number of moves, it should change to a lower star rating. After a few more moves, it should change to a even lower star rating (down to 1).
 
-## Contributing
+  If the number of moves reached to 20 so the player will lose 1 star and son on
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+  When the player starts a game, a displayed timer should also start. Once the player wins the game, the timer stops.
+  
+  The player has restart button to restart the game.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+## How the game works
+  The cards are arranged randomly on the grid with the symbol face down. The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match! 
+- The player flips one card over to reveal its underlying symbol.
+- The player then turns over a second card, trying to find the corresponding card with the same symbol.
+- If the cards match, both cards stay flipped over.
+- If the cards do not match, both cards are flipped face down.
+- The game ends once all cards have been correctly matched.
+
+
+
+
+

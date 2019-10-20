@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    background: #ffffff url('../img/geometry2.png');
     font-family: 'Coda', cursive;
 }
 
@@ -31,6 +31,7 @@ body {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    text-align: center;
 }
 
 /*
@@ -38,7 +39,7 @@ h1 {
  */
 
 .deck {
-    width: 660px;
+    width: 50%;
     min-height: 680px;
     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
     padding: 32px;
@@ -48,7 +49,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 3em;
+    margin: 0 auto 3em;
 }
 
 .deck .card {
@@ -86,9 +87,8 @@ h1 {
  */
 
 .score-panel {
-    text-align: left;
-    width: 345px;
-    margin-bottom: 10px;
+    width: 50%;
+    margin: 0 auto 1em;
 }
 
 .score-panel .stars {
@@ -106,4 +106,116 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+    margin: 0;
+}
+
+
+
+/*  style for Congratulation panel and timer   */
+
+.end-game {
+    width: 100%;
+}
+
+.cong-panel {
+    width: 50%;
+    min-height: 380px;
+    background: #fff;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3em auto 3em;
+    flex-direction: column;
+}
+
+.cong-panel p {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.cong-panel button {
+    background: blueviolet;
+    border: 0;
+    padding: 6px;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.cong-panel .moves-stars {
+    color: #7d8182;
+    font-size: 18px;
+}
+
+.cong-panel img {
+    max-width: 50%;
+}
+
+.final-moves,
+.remainig-stars,
+.second {
+    padding: 5px;
+}
+
+.timer {
+    text-align: center;
+    margin: 0 auto 1em;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+
+    .score-panel {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 1em;
+    }
+
+    .score-panel .restart {
+        float: none;
+        margin-top: 1em;
+    }
+
+    .deck {
+        padding: 20px;
+    }
+
+    .deck {
+        width: 80%;
+        margin: 0 auto 1em;
+    }
+
+    .cong-panel {
+        width: 80%;
+        margin: 3em auto 1em;
+        text-align: center;
+    }
+
+    .deck .card {
+        margin-bottom: 10px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px) {
+
+    .deck {
+        width: 60%;
+        margin: 0 auto 3em;
+    }
+
+    .cong-panel {
+        width: 60%;
+        margin: 3em auto 1em;
+        text-align: center;
+    }
 }
